@@ -25,7 +25,7 @@ str(df4)
 
 # Use Vector Data or method used to import data
 #make one of the DF active
-df = df3
+df = df1
 
 mean(df$X); mean(df$Y)
 sum(df$X); sum(df$Y)
@@ -42,6 +42,7 @@ abline(v=c(3,5),h=c(6,10), col=c('red','blue')) # few straight lines at x & y ax
 #Model
 fit1 = lm(Y ~ X, data=df) # create Simple Linear Model Y wrt X
 fit1
+names(fit1)
 coef(fit1)  # Coefficients of Equation Y = mX + C
 residuals(fit1)  # Diff of Y actual - Y predicted
 #abline(h=coef(fit1)[1])
